@@ -1,0 +1,43 @@
+.div{
+    width: 15vw;
+    height: 15vw;
+    background-color: rgb(177,173,70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 5rem 0;
+    position: relative;
+    border-radius: 0.4rem;
+    margin: 0.5rem;
+}
+
+.name{
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 10vh;
+    left: 1vw;
+    background-color: rgb(201, 204, 40);
+    width: 7vw;
+}
+
+.image{
+    width: 100%;
+}
+
+.btn{
+    background-color: rgb(243,52,53);
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+.data{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
