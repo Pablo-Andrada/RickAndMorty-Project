@@ -18,7 +18,7 @@ const SearchBar = (props) => {
             onChange={handleChange}
             value={id}
          />
-         <button onClick={()=>{props.onSearch(id)} } className={styles.btn}>AGREGAR </button>
+         <button onClick={()=>{props.onSearch(id)} } className={styles.btn}>AGREGAR</button>
       </div>
    );
 }
