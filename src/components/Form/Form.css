@@ -1,4 +1,4 @@
-.Form{
+/*.Form {
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -7,6 +7,65 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    
- }
+    align-items: center;
+    justify-content: start;
+    display: flex
+}
+label{
+    display: flex;
+}
+input{
+    display: flex;
+}
+*/
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 120px; /* Asegura el mismo ancho para ambos labels */
+    text-align: center;
+    margin-right: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d63384; /* Color del botón actualizado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #b6206f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #9d1a5b;
+    box-shadow: none;
+}
