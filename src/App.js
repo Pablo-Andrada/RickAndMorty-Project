@@ -10,8 +10,8 @@ import About from "./components/About/About";
 import Detail from "./components/Detail/Detail";
 import Form from "./components/Form/Form";
 
-const USER_EMAIL = "pablomatiasandrada@gmail.com";
-const USER_PASSWORD = "Leon0908*/";
+const USER_EMAIL = "User@gmail.com";
+const USER_PASSWORD = "Password1234";
 
 function App() {
    const [characters, setCharacters] = useState([]);

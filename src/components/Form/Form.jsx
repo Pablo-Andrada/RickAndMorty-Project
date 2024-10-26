@@ -31,7 +31,7 @@ const Form = ({login}) => {
     },[userData])
 
     return (
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit}>
             <label htmlFor="email">Email: </label>
             <input
                 type="email"
@@ -56,6 +56,9 @@ const Form = ({login}) => {
                 errors.password !== "" ? <p style={{ color: "red" }}>{errors.password}</p> : ""
             }
             <button type="submit">SUBMIT</button>
+            <h4>Puedes probar la App con los siguientes info standar</h4>
+            <h5>Email: </h5><p>User@gmail.com</p>
+            <h5>Password: </h5><p>Password1234</p>
 
         </form>
     );
