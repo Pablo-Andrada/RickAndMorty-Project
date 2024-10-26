@@ -1,4 +1,5 @@
 Here you can test the website: https://rick-and-morty-project-zeta-one.vercel.app/.
+However, it is still a project in progress. Thanks for your visit!!
 
 # Getting Started with Create React App
 
