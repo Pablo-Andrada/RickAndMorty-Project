@@ -3,12 +3,14 @@ import { Routes, Route, useLocation,useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import './App.css';
 import backgroundVideo from "./assets/imagenes/videolargo.mp4";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import About from "./components/About/About";
 import Detail from "./components/Detail/Detail";
 import Form from "./components/Form/Form";
+
 
 const USER_EMAIL = "User@gmail.com";
 const USER_PASSWORD = "Password1234";
