@@ -25,8 +25,8 @@
 }
 
 .btn{
-    background-color: rgb(243,52,53);
-    color: black;
+    background-color: rgb(224, 48, 48);
+    color: rgba(0, 0, 0, 0.89);
     position: absolute;
     top: 0;
     right: 0;
