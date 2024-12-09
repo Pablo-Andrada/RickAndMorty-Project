@@ -14,8 +14,8 @@ const validation = (input) => {
     if (!regex.test(input.password)) {
         errors.password = "Debe tener al menos un número"
     }
-    if (input.password.length < 6 || input.password.length > 10) {
-        errors.password = "El password debe estar entre 6 y 10 caracteres"
+    if (input.password.length < 6 || input.password.length > 20) {
+        errors.password = "El password debe estar entre 6 y 20 caracteres"
     }
 
 
