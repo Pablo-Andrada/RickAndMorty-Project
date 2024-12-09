@@ -13,6 +13,9 @@ const NavBar = (props) => {
             <Link to="/about" >
             <button className={styles.btn} >ABOUT</button>
             </Link>
+            <Link to="/" >
+            <button className={styles.btn} >UNLOG</button>
+            </Link>
 
         </div>
     )
