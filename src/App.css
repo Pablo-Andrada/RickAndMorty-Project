@@ -11,8 +11,41 @@
    justify-content: start;
 }
 
-#video{
+/* #video{
    position: fixed;
    z-index: -1;
    width: 100%;
-}
+} */
+
+
+#video {
+   position: fixed; /* Fija el video en el fondo */
+   top: 0;
+   left: 0;
+   width: 100%; /* Ocupa todo el ancho */
+   height: 100%; /* Ocupa todo el alto */
+   object-fit: cover; /* Ajusta el video sin deformarlo */
+   z-index: -1; /* Lo envía detrás del contenido */
+ }
+ .App {
+   position: relative;
+   z-index: 1;
+   color: white;
+ }
+ 
+ h3, p {
+   text-align: center;
+   margin: 20px;
+   background: rgba(0, 0, 0, 0.5); /* Opcional: fondo semi-transparente */
+   padding: 20px;
+   border-radius: 5px;
+ } 
+ 
+ h3 {
+   margin-top: 50px; /* Mueve el h3 más cerca de la parte superior */
+ }
+ 
+ p {
+   margin-top: 20px; /* Mueve el p un poco más cerca del h3 */
+ }
+ 
