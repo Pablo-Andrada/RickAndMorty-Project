@@ -1,14 +1,89 @@
-.div{
-    text-align: center;
+/* ==========================================================================
+   About - Versión compacta y ajustada
+   ========================================================================== */
+
+.aboutContainer {
     width: 100%;
-    height: 100%;
-    background-size: cover;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/imagenes/rymEspacio.jpg");
-    background-position: center;
-    position: relative;
     justify-content: center;
-    color: rgb(161, 119, 3);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), 
+                url("../../assets/imagenes/rymEspacio.jpg") center/cover);
+    padding: 2rem;
+    position: relative;
+}
+
+/* Contenedor compacto (60% del ancho original) */
+.contentCard {
+    background: rgba(25, 25, 25, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 600px; /* Tamaño reducido */
+    width: 85%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #6643b5;
+    margin: auto;
+}
+
+.mainTitle {
+    font-size: 2rem;
+    color: #d8b9ff;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Texto original completo */
+.aboutText {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+}
+
+/* Lista de tecnologías en 2 columnas */
+.techGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.techItem {
+    background: rgba(102, 67, 181, 0.15);
+    padding: 0.8rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Check original ✅ con brillo */
+.techItem::before {
+    content: "✅";
+    filter: drop-shadow(0 0 3px #d8b9ff);
+}
+
+/* Botón Home centrado */
+.homeBtnContainer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.homeBtn {
+    background: #6643b5;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.homeBtn:hover {
+    background: #8594e4;
+    transform: translateY(-2px);
 }
