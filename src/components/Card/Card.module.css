@@ -9,7 +9,10 @@
     transition: transform 0.3s ease;
 }
 
-/* Botón de cierre - Versión final */
+.cardContainer:hover {
+    transform: translateY(-5px);
+}
+
 .closeButton {
     position: absolute;
     top: 15px;
@@ -29,25 +32,33 @@
     transition: all 0.3s ease;
 }
 
-/* Contenido de la tarjeta - Alineación perfecta */
+.closeButton:hover {
+    background: #FEC260;
+    color: #2A0944;
+    transform: scale(1.1);
+}
+
 .cardImage {
     width: 100%;
-    height: 220px; /* Altura reducida para mejor proporción */
+    height: 220px;
     object-fit: cover;
-    border-bottom: 3px solid #A12568;
 }
 
 .cardContent {
-    padding: 15px 20px 20px 20px;
+    padding: 15px 20px;
 }
 
+/* Título sin subrayado ni bordes */
 .cardTitle {
     color: #FEC260;
     margin: 0 0 12px 0;
     font-size: 1.3rem;
-    min-height: 40px; /* Evita saltos de línea */
+    min-height: 40px;
+    text-decoration: none;
+    border-bottom: none;
 }
 
+/* Etiquetas sin subrayados */
 .cardInfo {
     display: flex;
     gap: 10px;
@@ -55,20 +66,27 @@
     align-items: center;
 }
 
-/* Etiquetas de estado y especie */
 .cardStatus, .cardSpecies {
     padding: 6px 15px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
+    text-decoration: none;
+    border: none;
 }
 
 .cardStatus {
     background: #2A0944;
-    color: #fff;
+    color: #FFF;
 }
 
 .cardSpecies {
     background: #A12568;
-    color: #fff;
+    color: #FFF;
+}
+
+/* Enlace sin subrayado heredado */
+.cardLink {
+    text-decoration: none !important;
+    color: inherit;
 }
