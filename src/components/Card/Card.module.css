@@ -9,66 +9,66 @@
     transition: transform 0.3s ease;
 }
 
-.cardContainer:hover {
-    transform: translateY(-5px);
-}
-
+/* Botón de cierre - Versión final */
 .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background: #A12568;
     color: white;
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
     transition: all 0.3s ease;
 }
 
-.closeButton:hover {
-    background: #FEC260;
-    color: #2A0944;
-}
-
+/* Contenido de la tarjeta - Alineación perfecta */
 .cardImage {
     width: 100%;
-    height: 250px;
+    height: 220px; /* Altura reducida para mejor proporción */
     object-fit: cover;
     border-bottom: 3px solid #A12568;
 }
 
 .cardContent {
-    padding: 15px;
+    padding: 15px 20px 20px 20px;
 }
 
 .cardTitle {
     color: #FEC260;
-    margin: 0 0 10px 0;
-    font-size: 1.4rem;
+    margin: 0 0 12px 0;
+    font-size: 1.3rem;
+    min-height: 40px; /* Evita saltos de línea */
 }
 
 .cardInfo {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Etiquetas de estado y especie */
+.cardStatus, .cardSpecies {
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 .cardStatus {
     background: #2A0944;
-    color: #FFF;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    color: #fff;
 }
 
 .cardSpecies {
     background: #A12568;
-    color: #FFF;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    color: #fff;
 }
