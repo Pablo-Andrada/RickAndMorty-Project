@@ -1,43 +1,74 @@
-.div{
-    width: 15vw;
-    height: 15vw;
-    background-color: rgb(177,173,70);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 5rem 0;
+.cardContainer {
+    background: #3B185F;
+    border-radius: 15px;
+    overflow: hidden;
     position: relative;
-    border-radius: 0.4rem;
-    margin: 0.5rem;
+    width: 280px;
+    margin: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.name{
-    font-size: 0.8em;
+.cardContainer:hover {
+    transform: translateY(-5px);
+}
+
+.closeButton {
     position: absolute;
-    bottom: 10vh;
-    left: 1vw;
-    background-color: rgb(201, 204, 40);
-    width: 7vw;
-}
-
-.image{
-    width: 100%;
-}
-
-.btn{
-    background-color: rgb(224, 48, 48);
-    color: rgba(0, 0, 0, 0.89);
-    position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
+    background: #A12568;
+    color: white;
     border: none;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 2;
+    transition: all 0.3s ease;
 }
 
-.data{
-    display: flex;
+.closeButton:hover {
+    background: #FEC260;
+    color: #2A0944;
+}
+
+.cardImage {
     width: 100%;
-    justify-content: space-around;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #A12568;
+}
+
+.cardContent {
+    padding: 15px;
+}
+
+.cardTitle {
+    color: #FEC260;
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.cardInfo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cardStatus {
+    background: #2A0944;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.cardSpecies {
+    background: #A12568;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
 }

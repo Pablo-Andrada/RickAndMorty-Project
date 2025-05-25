@@ -1,14 +1,14 @@
 import React from "react";
 import Cards from "../Cards/Cards";
-
+import styles from "./Home.module.css";
 
 const Home = (props) => {
     return (
-        <div>
-            <h3>Para poder buscar personajes: </h3>
-            <p>Puedes buscar personajes simplemente buscandolos por sus números de ID, puedes intentar
-                escribiendo por ejemplo el número 1, el 2, etc. Mientras lo haces el personaje respectivo ira apareciendo y tendrás la posibilidad de ver su información y también de quitarlo en caso que ya no lo quieras con "close"
-            </p>
+        <div className={styles.homeContainer}>
+            <div className={styles.instructions}>
+                <h2>Búsqueda de personajes</h2>
+                <p>Ingresa un ID numérico (ej: 1, 2, 3...) para mostrar personajes. Cada tarjeta puede cerrarse individualmente.</p>
+            </div>
             <Cards characters={props.characters} onClose={props.onClose} />
         </div>
     )

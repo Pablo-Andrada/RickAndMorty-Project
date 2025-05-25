@@ -1,0 +1,24 @@
+.homeContainer {
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #FEC260;
+}
+
+.instructions h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.instructions p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
