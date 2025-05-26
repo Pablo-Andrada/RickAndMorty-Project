@@ -1,0 +1,34 @@
+.filtersContainer {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+.filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filterGroup label {
+    color: #d8b9ff;
+    font-weight: 600;
+}
+
+.filterGroup select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid #6643b5;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.filterGroup select:hover {
+    border-color: #8594e4;
+}
