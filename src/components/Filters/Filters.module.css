@@ -3,32 +3,64 @@
     gap: 2rem;
     margin: 2rem 0;
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(25, 25, 25, 0.95);
     border-radius: 10px;
-    backdrop-filter: blur(8px);
+    border: 1px solid #6643b5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .filterGroup {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    position: relative;
 }
 
 .filterGroup label {
     color: #d8b9ff;
     font-weight: 600;
+    font-size: 0.95rem;
 }
 
+/* Select principal - Texto visible */
 .filterGroup select {
-    padding: 0.5rem;
-    border-radius: 5px;
+    padding: 0.6rem;
+    border-radius: 6px;
     border: 2px solid #6643b5;
     background: rgba(255, 255, 255, 0.1);
     color: white;
-    min-width: 150px;
+    min-width: 180px;
     cursor: pointer;
+    font-size: 0.9rem;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-.filterGroup select:hover {
-    border-color: #8594e4;
+/* Flecha del select personalizada */
+.filterGroup::after {
+    content: "▼";
+    color: #d8b9ff;
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    pointer-events: none;
+}
+
+/* Opciones del select - Fondo oscuro y texto legible */
+.filterGroup select option {
+    background: #2A0944;
+    color: white;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+/* Hover en opciones */
+.filterGroup select option:hover {
+    background: #3B185F !important;
+}
+
+/* Focus en el select */
+.filterGroup select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #8594e4;
 }
